@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="checkbt()">클릭</button>
+    <ul>
+      <li>클릭</li>
+      <li>클릭</li>
+      <li>클릭</li>
+    </ul>
+    <fieldset>
+      <input type="text" name="" id="" /> <br />
+      <input type="submit" value="클릭" />
+    </fieldset>
+
+    <script>
+      var x = new Number(3);
+      var y = 4;
+      var z;
+
+      z = 3;
+      alert(typeof z);
+      var ll = document.getElementsByTagName("li");
+      for (let i = 0; i < ll.length; i++) {
+        ll[i].addEventListener("click", () => {
+          alert(`${i + 1}번째 li태그를 클릭
+          `);
+        });
+      }
+      var nums = new Array();
+      nums.push(3);
+      nums.push(3);
+      nums.push(3);
+      var num2 = [];
+      num2.push(1);
+      num2.push(2);
+      num2.push(3);
+      for (let i = 0; i < num2.length; i++) {
+        console.log(num2[i]);
+      }
+      num2.pop();
+
+      console.log(num2[2]);
+      var nums3 = [2, 3, "hellow", 7];
+      var numss = new Array(2, 3, "hellow", 7);
+      console.log(nums3);
+      console.log(numss);
+
+      var exam = new Object();
+      exam.kor = 30;
+      exam.eng = 70;
+      exam.math = 80;
+      exam.Kor = 20;
+      console.log(exam.kor + exam.eng);
+    </script>
+  </body>
+</html>
