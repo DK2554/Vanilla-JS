@@ -77,6 +77,8 @@ exam["math"]=80;
 간단한 표기법
 var exam={"kor":30,"eng":50}
 
+eval()
+
 # AJAX
 
 AJAX:비동기통신
